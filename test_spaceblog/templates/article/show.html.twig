@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block body %}
+<div class="container p-4 rounded">
+<a type="button" class="btn" href="{{ path('index') }}">Retour</a>
+<div class="p-5">
+<div>
+{% if article.cover %}
+    <img class="card-img-top" src="/img/blog/{{article.cover }}" alt="{{ article.title }}" loading="lazy" width="1000" height="400">
+{% endif %}
+</div>
+<div class="bg-white p-4">
+<h2 class="text-center titleshow">{{ article.title }}<h2>
+
+<p>{{ article.content|raw }}</p><br>
+
+<small>Publié le {{ article.DateCreated|format_datetime( 'short',locale='fr', timezone='Europe/Paris') }}</small>
+
+</div>
+</div>
+</div>
+{% endblock %}
+

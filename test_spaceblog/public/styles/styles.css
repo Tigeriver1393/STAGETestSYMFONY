@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+nav {
+    font-family: 'Roboto Slab', serif;
+}
+
+.containe {
+    position: relative;
+    text-align: center;
+    color: #DC5E44;
+}
+
+span {
+    color: #DC5E44;
+}
+
+.text_left {
+    position: absolute;
+    top: 27%;
+    left: 7%;
+    transform: translate(313, 106);
+    text-align: right;
+    font-family: 'Roboto Slab', serif;
+    font-size: 35pt;
+    line-height: 45pt;
+}
+
+.title {
+    margin-left: 40px;
+    color: #DC5E44;
+    font-family: 'Roboto Slab', serif;
+}
+
+.card-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: center;
+    transition: all 200ms ease-in-out;
+    margin-left: 40px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.card {
+    margin: 10px
+}
+
+.color-title {
+    color: #DC5E44;
+}
+
+.btn {
+    background-color: #DC5E44 !important;
+    color: white !important;
+    border-radius: 10px !important;
+}
+
+.color-title:hover {
+    color: red;
+}
+
+div {
+    font-size: 12px;
+    font-family: 'Roboto Slab', serif;
+}
+
+small {
+    font-size: 10px
+}
+
+.titleshow {
+    color: #DC5E44;
+}
+
+footer {
+    height: 150px;
+    background: #DC5E44;
+    bottom: 0;
+    font-family: 'Roboto Slab', serif;
+    width: 100%;
+}

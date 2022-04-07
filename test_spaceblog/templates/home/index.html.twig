@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}SpaceBlog{% endblock %}
+
+{% block body %}
+
+<div class="container containe float-center">
+<img src="{{ asset('img/bannière.png') }}" loading="lazy" width="1000" height="330"/>
+<h1 class="text_left text-white">DECOUVRER <span>L'ESPACE</span> <br> COMME JAMAIS <br> AUPARAVANT</h1>
+</div>
+
+<div class="container p-4 text-danger ">
+    <div class="row">
+    <h3 class="font-weight-bold title">Nos Articles<h3>
+
+<div class="card-container">        
+{% include 'article/list.html.twig' with { articles } %}
+</div>
+
+
+    </div>
+</div>
+
+{% endblock %}
